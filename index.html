@@ -14,18 +14,18 @@
     
     <div class="body">
         <h2>Book your Session</h2>
-        <form method="get" action="submit.html">
+        <form name="contact" method="POST" data-netlify="true">
             <p>
                 <label>Name</label>
-                <input type="text" placeholder="Full Name" required />
+                <input type="text" name="name" placeholder="Full Name" required />
             </p>
             <p>
                 <label>Number</label>
-                <input type="tel" placeholder="Phone Number" required />
+                <input type="tel" name="tel" placeholder="Phone Number" required />
             </p>
             <p>
                 <label>Email</label>
-                <input type="email" placeholder="Email" required />
+                <input type="email" name="email" placeholder="Email" required />
             </p>
             <p>
                 <label>Address</label>
@@ -50,7 +50,7 @@
             </p>
             <p>
                 <label id="top">Comments</label>
-                <textarea cols="12"></textarea>
+                <textarea cols="12" name="message"></textarea>
             </p>
             <input type="submit" value="Submit" />
         </form>
